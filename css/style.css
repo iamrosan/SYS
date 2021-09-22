@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#line-bar{
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    /* background-color:red; */
+    top: 20px;
+    right: -25px;
+}
+
+.contact-div{
+    width: 100vw;
+    border: 1px solid blue;
+    /* height: 30px; */
+    display: flex;
+    flex-direction: column;
+    margin: 5px auto;
+}
+
+.contact-div p{
+    padding: 2px;
+    font-size: 10px;
+    text-align: center;
+
+}
+nav .logo img{
+    display: none;}
+
+nav {
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100vw;
+    height: 50vh;
+    border: 1px solid green;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-bar ul li{
+    padding: 5px;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.homabout-sec{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 40vh;
+    border: 1px solid red;
+    background-image: url("./images/1.png");
+}
+/* .dum{
+    width: 100;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+} */
+.homabout-sec h1{
+    font-size: 26px;
+}
+.homabout-sec h3{
+    font-size: 16px;
+}
+.homabout-sec h1,h3{
+   padding: 10px 0;
+    
+}
+.homabout-sec button{
+    padding: 7px;
+    background-color: rgb(9, 9, 212);
+    transition: 0.2s all ease;
+}
+.btn-a{
+    text-decoration: none;
+    color: black;   
+}
+.homabout-sec button:hover{
+   background-color: rgb(3, 3, 75);
+}
+
+/* About section */
+.container{
+    margin: 30px;
+    display: flex;
+}
+
+.container .about{
+    width: 60%;
+    margin-right: 10px;
+}
+.about button{
+    margin-top: 10px;
+}
+.notice{
+    margin-left: 10px;
+}
+.container .notice li{
+    list-style: none;
+}
+
+
+/* Faculty Section */
+#msg{
+    font-size: 15px;
+    text-align: center;
+    margin: 50px 30px 30px 30px;
+}
+.chairperson,.secretary{
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    display: flex;
+    
+
+}
+
+.pic{
+    /* position: relative; */
+    width: 39%;
+    /* top: 40%; */
+    border: 1px solid blue;
+}
+
+.txt{
+    /* position: relative; */
+    width: 61%;
+    /* top: 40%; */
+    border: 1px solid blue;
+}
+.pic img{
+    width: 100%;
+}
+
+
+/* Contact footer section */
+
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-sec{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media only screen and (min-width:940px){
+    #line-bar{
+        display: none;
+    }
+    .contact-div{
+        width: 100vw;
+        border: 1px solid blue;
+        /* height: 30px; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 5px auto;
+    }
+    #contact-ph{
+        display: flex;
+        margin-right:200px ;
+        
+    }
+    #contact-ph p{
+        margin: 10px 20px;
+    }
+    #date-time{
+        align-self: center;
+    }
+    nav {
+        display: flex;
+    }
+    nav .logo img{
+        /* display: none; */
+        margin-top: 5px;
+        width: 80px;
+        height: auto;
+    }
+    .nav-bar ul{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width: 100vw;
+        height: 63px;
+        border: 1px solid green;
+        align-items: center;
+        list-style: none;
+    }
+}
